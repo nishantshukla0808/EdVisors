@@ -1,25 +1,33 @@
-import './App.css'
-import Home from './Pages/Home'
-import { useEffect } from 'react'
-import AOS from 'aos'
-import "aos/dist/aos.css"
-import { Routes,Route } from 'react-router-dom'
+import './App.css';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import { Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+import { Auth0Provider } from "@auth0/auth0-react";
+import Navbar from './Components/Navbar'; 
 
+const domain = "dev-dmgurz6ijryv8xgt.us.auth0.com";
+const clientId = "kqW4knSd8naEoFFG9UD5qRiOVVkiSyhU"; 
 
 function App() {
-  useEffect(()=> {
+  useEffect(() => {
     AOS.init();
     AOS.refresh();
-  },[])
+  }, []);
 
   return (
-    <>
-    <Routes >
-      {/* <Route path="/About" element={<About/>} /> */}
-      <Route path="/" element={<Home/>} />
-    </Routes>
-      </>
-  )
+    <Auth0Provider
+      domain={domain}
+      clientId={clientId}
+      authorizationParams={{ redirect_uri: window.location.origin }}
+    >
+  
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Auth0Provider>
+  );
 }
 
-export default App
+export default App;

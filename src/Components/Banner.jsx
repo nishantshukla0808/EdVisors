@@ -1,7 +1,7 @@
 import React from 'react';
-import scholarshipslide from '../assets/Scholarship.jpg';
+import scholarshipslide from '../assets/Scholarship1.jpg';
 import hackthonslide from '../assets/Hackathon.jpg';
-import counsellorslide from '../assets/Counselling.png';
+import counsellorslide from '../assets/Counselling1.jpg';
 
 const Banner = () => {
   return (

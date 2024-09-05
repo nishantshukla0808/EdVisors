@@ -23,7 +23,7 @@ function App() {
     <Auth0Provider
       domain={domain}
       clientId={clientId}
-      authorizationParams={{ redirect_uri: window.location.origin}/SelectRole}
+      authorizationParams={{ redirect_uri: window.location.origin}}
     >
       <RoleProvider> 
         <Navbar />

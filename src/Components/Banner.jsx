@@ -40,7 +40,7 @@ const Banner = () => {
             alt="Contact Your Counsellors"
             style={{ height: 'auto', maxHeight: '400px', objectFit: 'cover' }}
           />
-          <div className="carousel-caption d-none d-md-block">
+          <div className="carousel-caption d-none d-md-block text-dark font-weight-bold">
             <h5>Contact Your Counsellors</h5>
             <p>Get instant guidance from expert counsellors to navigate your career path.</p>
           </div>
@@ -54,7 +54,7 @@ const Banner = () => {
             alt="Apply for Hackathons"
             style={{ height: 'auto', maxHeight: '400px', objectFit: 'cover' }}
           />
-          <div className="carousel-caption d-none d-md-block">
+          <div className="carousel-caption d-none d-md-block text-light font-weight-bold">
             <h5>Apply for Hackathons</h5>
             <p>Join competitive hackathons and showcase your skills on a global platform.</p>
           </div>
@@ -68,7 +68,7 @@ const Banner = () => {
             alt="Apply for Scholarships"
             style={{ height: 'auto', maxHeight: '400px', objectFit: 'cover' }}
           />
-          <div className="carousel-caption d-none d-md-block">
+          <div className="carousel-caption d-none d-md-block text-dark font-weight-bold">
             <h5 className="text-dark">Apply for Scholarships</h5>
             <p className="text-dark">Explore various scholarship opportunities to fund your education journey.</p>
           </div>

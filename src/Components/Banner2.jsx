@@ -12,7 +12,7 @@ const Banner2 = () => {
           WebkitTextFillColor: 'transparent',
         }}
       >
-        Why You Should Choose EduVisors
+        Why You Should Choose EdVisors
       </h2>
 
       {/* Card Rows */}

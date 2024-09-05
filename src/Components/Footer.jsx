@@ -1,7 +1,7 @@
 import React from 'react';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
-import logo from '../assets/eduvisors-logo.png'; 
+import logo from '../assets/edvisors-logo.png'; 
 import teamLogo from '../assets/NaKsHtrA-logo.png'; 
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 

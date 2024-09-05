@@ -1,9 +1,12 @@
+// Navbar.jsx
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import logo from '../assets/eduvisors-logo.png';
+import { useRole } from '../context/RoleContext'; // Import useRole hook
 
 const Navbar = () => {
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
+  const { role } = useRole(); // Get the current role from context
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
@@ -13,7 +16,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="EduVisors"
-            style={{ height: '60px', marginRight: '10px' }}
+            style={{ height: '80px', marginRight: '10px' }}
           />
         </a>
 
@@ -116,6 +119,13 @@ const Navbar = () => {
               </ul>
             </li>
           </ul>
+
+          {/* Display Dashboard Button Based on Role */}
+          {role && (
+            <button className="btn btn-outline-secondary me-2">
+              {role === 'Student' ? 'Student Dashboard' : 'Counsellor Dashboard'}
+            </button>
+          )}
 
           {/* Auth Buttons */}
           <div className="d-flex">

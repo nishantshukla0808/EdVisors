@@ -1,7 +1,7 @@
 import React from 'react';
-import scholarshipslide from '../assets/Scholarship.jpg'
-import hackthonslide from '../assets/Hackthon.jpg'
-import counsellorslide from '../assets/Counselling.png'
+import scholarshipslide from '../assets/Scholarship.jpg';
+import hackthonslide from '../assets/Hackthon.jpg';
+import counsellorslide from '../assets/Counselling.png';
 
 const Banner = () => {
   return (
@@ -35,10 +35,10 @@ const Banner = () => {
         {/* Slide 1: Contact Your Counsellors */}
         <div className="carousel-item active">
           <img
-            src= {counsellorslide}
+            src={counsellorslide}
             className="d-block w-100"
             alt="Contact Your Counsellors"
-            style={{ height: '500px', objectFit: 'cover' }}
+            style={{ height: 'auto', maxHeight: '400px', objectFit: 'cover' }}
           />
           <div className="carousel-caption d-none d-md-block">
             <h5>Contact Your Counsellors</h5>
@@ -49,13 +49,13 @@ const Banner = () => {
         {/* Slide 2: Apply for Hackathons */}
         <div className="carousel-item">
           <img
-            src= {hackthonslide}
+            src={hackthonslide}
             className="d-block w-100"
             alt="Apply for Hackathons"
-            style={{ height: '500px', objectFit: 'cover' }}
+            style={{ height: 'auto', maxHeight: '400px', objectFit: 'cover' }}
           />
           <div className="carousel-caption d-none d-md-block">
-            <h5 >Apply for Hackathons</h5>
+            <h5>Apply for Hackathons</h5>
             <p>Join competitive hackathons and showcase your skills on a global platform.</p>
           </div>
         </div>
@@ -63,14 +63,14 @@ const Banner = () => {
         {/* Slide 3: Apply for Scholarships */}
         <div className="carousel-item">
           <img
-            src= {scholarshipslide}
+            src={scholarshipslide}
             className="d-block w-100"
             alt="Apply for Scholarships"
-            style={{ height: '500px', objectFit: 'cover' }}
+            style={{ height: 'auto', maxHeight: '400px', objectFit: 'cover' }}
           />
           <div className="carousel-caption d-none d-md-block">
-            <h5 class="text-dark">Apply for Scholarships</h5>
-            <p class="text-dark">Explore various scholarship opportunities to fund your education journey.</p>
+            <h5 className="text-dark">Apply for Scholarships</h5>
+            <p className="text-dark">Explore various scholarship opportunities to fund your education journey.</p>
           </div>
         </div>
       </div>

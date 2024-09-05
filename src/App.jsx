@@ -1,3 +1,4 @@
+// App.jsx
 import './App.css';
 import { useEffect } from 'react';
 import AOS from 'aos';
@@ -6,6 +7,8 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import { Auth0Provider } from "@auth0/auth0-react";
 import Navbar from './Components/Navbar'; 
+import { RoleProvider } from './context/RoleContext'; 
+import SelectRole from './Pages/SelectRole';
 
 const domain = "dev-dmgurz6ijryv8xgt.us.auth0.com";
 const clientId = "kqW4knSd8naEoFFG9UD5qRiOVVkiSyhU"; 
@@ -22,10 +25,13 @@ function App() {
       clientId={clientId}
       authorizationParams={{ redirect_uri: window.location.origin }}
     >
-  
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <RoleProvider> 
+        <Navbar />
+        <Routes>
+          <Route path="/select-role" element={<SelectRole />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </RoleProvider>
     </Auth0Provider>
   );
 }

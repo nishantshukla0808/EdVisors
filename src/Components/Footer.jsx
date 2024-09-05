@@ -1,8 +1,8 @@
 import React from 'react';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
-import logo from '../assets/eduvisors-logo.png'
-
+import logo from '../assets/eduvisors-logo.png'; 
+import teamLogo from '../assets/NaKsHtrA-logo.png'; 
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Footer = () => {
@@ -10,22 +10,31 @@ const Footer = () => {
     <footer className="bg-dark text-white pt-5 pb-4">
       <div className="container">
         <div className="row">
-          {/* Logo and About Us Section */}
+          {/* Logo, About Us, and Team Logo Section */}
           <div className="col-md-4 mb-4">
-          <a href="/" className="text-decoration-none text-white d-flex align-items-center">
-    <img 
-      src={logo} 
-      alt="EduVisors Logo" 
-      style={{ width: '300px', height: '80px', marginRight: '10px', marginBottom: '20px'}} 
-    />
-    <h4 className="mb-3"></h4>
-
-  </a>
-            <p style={{textAlign: 'justify'}}>
+            <a href="/" className="text-decoration-none text-white d-flex align-items-center">
+              <img
+                src={logo}
+                alt="EduVisors Logo"
+                style={{ width: '300px', height: '80px', marginRight: '10px', marginBottom: '20px' }}
+              />
+              <h4 className="mb-3"></h4>
+            </a>
+            <p style={{ textAlign: 'justify' }}>
               EduVisors is dedicated to helping students find their career paths with personalized guidance from
               experienced counsellors. We aim to provide actionable career insights, exclusive resources, and a network
               of professionals to guide you through every step of your journey.
             </p>
+            
+            {/* Team Logo and Developed By Text */}
+            <div className="d-flex flex-column align-items-start mt-3">
+              <p className="mb-1">Developed by:</p>
+              <img
+                src={teamLogo} // Add your team logo path
+                alt="Team Logo"
+                style={{ width: '300px', height: '80px', marginBottom: '10px' }}
+              />
+            </div>
           </div>
 
           {/* Social Media and Contact Section */}

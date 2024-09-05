@@ -48,8 +48,7 @@ const Banner2 = () => {
             <div className="card-body d-flex flex-column justify-content-center align-items-center text-center">
               <h5 className="card-title fw-bold mb-3 text-primary">24/7 Support</h5>
               <p className="card-text">
-                Access round-the-clock support to answer your queries and keep you on track. Whether it's career advice,
-                application help, or just moral support, our team is here to help whenever you need it.
+              Get 24/7 support for all your needs. Whether you require career guidance, assistance with applications, or just a boost of encouragement, our team is always available to help you stay on track.
               </p>
             </div>
           </div>

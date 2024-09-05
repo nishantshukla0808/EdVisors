@@ -1,6 +1,6 @@
 import React from 'react';
 import scholarshipslide from '../assets/Scholarship.jpg';
-import hackthonslide from '../assets/Hackthon.jpg';
+import hackthonslide from '../assets/Hackathon.jpg';
 import counsellorslide from '../assets/Counselling.png';
 
 const Banner = () => {

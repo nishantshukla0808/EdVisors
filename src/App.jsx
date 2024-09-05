@@ -8,7 +8,7 @@ import Home from './Pages/Home';
 import { Auth0Provider } from "@auth0/auth0-react";
 import Navbar from './Components/Navbar'; 
 import { RoleProvider } from './context/RoleContext'; 
-import SelectRole from './Pages/SelectRole';
+import SelectRole from './Pages/select-role';
 
 const domain = "dev-dmgurz6ijryv8xgt.us.auth0.com";
 const clientId = "kqW4knSd8naEoFFG9UD5qRiOVVkiSyhU"; 
